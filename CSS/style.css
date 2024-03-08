@@ -1,0 +1,13 @@
+header>h1 {
+    text-align: center;
+}
+.main-container {
+    display: flex;
+}
+.form,
+.result {
+    border: 1px solid;
+    width: 100%;
+    padding: 8px;
+}
+
