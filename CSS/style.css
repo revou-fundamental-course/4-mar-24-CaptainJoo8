@@ -2,7 +2,6 @@
     display: flex;
 }
 .container-item {
-    border: 1px solid;
     width: 100%;
     padding: 24px;
 }
@@ -24,7 +23,6 @@ h3 {
     text-align: center;
 }
 .container-result {
-    border: 1px solid;
     width: 100%;
     padding: 24px;
     text-align: center;
@@ -39,4 +37,7 @@ h3 {
 .penyakit {
     background-color: aliceblue;
     padding: 4px;
+}
+.img {
+    text-align: center;
 }
