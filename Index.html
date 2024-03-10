@@ -10,19 +10,61 @@
         </header>
         <main>
             <div class="main-container">
-                <div class="form">
-                    <h2>BMI Form</h2>
-                    <p class="artikel">Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang
-                        menunjang penampilan, berat badan juga menandakan kondisitubuh yang sehat.
-                        Bagaimana denganmu? Yuk, hitum sekarang di kalkulator BMI</p>
-                        <label>Jenis kelamin</label></br>
-                        <input type="radio" name="sex" id="sex-man">
-                        <label for="sex-man">Pria</label>
-                        <input type="radio" name="sex" id="sex-woman">
-                        <label for="sex-woman">Wanita</label>
+                <div class="container-item">
+                    <h2>Kalkulator BMI</h2>
+                    <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk 
+                        tubuh yang menunjang penampilan,berat badan juga menandakan kondisi
+                        tubuh yang sihat. Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.</p>
+                    <section class="container-form">
+                        <div>
+                            <label>Jenis kelamin</label></br>
+                            <input type="radio" name="sex" id="sex-man">
+                            <label for="sex-man">Pria</label>
+                            <input type="radio" name="sex" id="sex-woman">
+                            <label for="sex-woman">Wanita</label>
+                        </div>
+                        <div>
+                            <label>Berat Badan (kg)</label><br />
+                            <input type="number">
+                        </div>
+                        <div>
+                            <label>Usia (tahun)</label><br />
+                            <input type="number">
+                        </div>
+                        <div>
+                            <label>Tinggi Badan (cm)</label><br />
+                            <input type="number">
+                        </div>
+                        <button type="button">Hitung BMI</button><button type="button">Reset</button>
+                    </section>
                 </div>
-                <div class="result">
-                    <h2>RESULT</h2>
+
+                <div class="container-result">
+                    <h2>Hasil</h2>
+                    <section class="container-hasil">
+                        <h4>Berat Badan Lebih</h4>
+                        <h1>0</h1>
+                        <h4>Anda Memiliki Berat Badan Berlebihan</h4>
+                        <button>Download Hasil BMI</button>
+                    </section>
+                    <section class="keterangan">
+                    <h4>Hasil BMI diantara 23 dan 25.<h4>
+                    <p>Anda berada dalam kategori overweight atau berat badan berlebih.<br />
+                       Cara terbaik untuk menurunkan berat badan adalah dengan mengatur
+                       kalori makanan yang dikonsumsi dan berolahraga.<br />
+                       Jika BMI Anda berada dalam kategori ini maka Anda dianjurkan menurunkan berat badan<br />
+                       hingga batas normal</p>
+                    </section>
+                    <button>Konsultasi Ahli Givi Via Aplikasi</button><button>Registrasi Online Ahli Gizi</button>
+                    <p style="text-align: left;">BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesihatan tubuh dan resiko penyakit<br />
+                    seseorang. Anda konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan<br />
+                    berat badan Anda.</p><br />
+                    
+                    <div class="penyakit">
+                    <h4>Beberapa penyakit yang berasal dari kegemukan</h4>
+                    <p>Diabetes<br />Hipertensi<br />Sakit Jantung<br />Osteoarthritis</p>
+                    <button>Konsultasi Ahli Givi Via Aplikasi</button><button>Registrasi Online Ahli Gizi</button>
+                    </div>
                 </div>
             </div>
 
