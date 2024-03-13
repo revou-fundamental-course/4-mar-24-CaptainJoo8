@@ -41,3 +41,17 @@ h3 {
 .img {
     text-align: center;
 }
+#h-input, #w-input {
+    padding: 8px;
+    margin: 4px;
+    background-color: orange;
+}
+.bmi-value, .status {
+    background-color: orange;
+}
+#calculate {
+    background-color: green;
+}
+#reset {
+    background-color: red;
+}

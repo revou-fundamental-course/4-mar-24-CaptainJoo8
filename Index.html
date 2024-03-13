@@ -2,6 +2,9 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcalator BMI</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
@@ -19,25 +22,15 @@
                     tubuh yang sihat. Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.</p>
                 <section class="container-form">
                     <div>
-                        <label>Jenis kelamin</label></br>
-                        <input type="radio" name="sex" id="sex-man">
-                        <label for="sex-man">Pria</label>
-                        <input type="radio" name="sex" id="sex-woman">
-                        <label for="sex-woman">Wanita</label>
-                    </div>
-                    <div>
-                        <label>Berat Badan (kg)</label><br />
-                        <input type="number">
-                    </div>
-                    <div>
-                        <label>Usia (tahun)</label><br />
-                        <input type="number">
-                    </div>
-                    <div>
-                        <label>Tinggi Badan (cm)</label><br />
-                        <input type="number">
-                    </div>
-                    <button type="button">Hitung BMI</button><button type="button">Reset</button>
+                        <label>
+                            <input id="h-input" type="number" placeholder="Tinggi Badan:">
+                        </label><br />
+                        <label>
+                            <input id="w-input" type="number" placeholder="Berat Badan:">
+                        </label><br/>
+
+                        <button type="submit" id="calculate" onclick="Calculate()">Calculate BMI</button>
+                        <button type="button" id="reset">Reset</button>
                 </section>
                 <div>
                     <h4>Keunggulan fitur</h4>
@@ -62,22 +55,28 @@
             </div>
 
             <div class="container-result">
-                <h2>Hasil</h2>
-                <section class="container-hasil">
-                    <h4>Berat Badan Lebih</h4>
-                    <h1>0</h1>
-                    <h4>Anda Memiliki Berat Badan Berlebihan</h4>
-                    <button>Download Hasil BMI</button>
+                <div class="bmi-value">
+                    <h4>BMI Value: </h4>
+                    <div id="bmi-output"></div>
+                </div>
+                <div class="status">
+                    <h4>Status: </h4>
+                    <div id="bmi-status"></div>
+            </div>
+                <button>Download Hasil BMI</button>
                 </section>
                 <section class="keterangan">
                     <h4>Hasil BMI diantara 23 dan 25.<h4>
-                    <p>Anda berada dalam kategori overweight atau berat badan berlebih.<br/>
-                    Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalori makanan yang<br/>
-                    dikonsumsi dan berolahraga.<br/>
-                    Jika BMI Anda berada dalam kategori ini maka Anda dianjurkan menurunkan berat badan<br/>
-                    hingga batas normal.</p>
+                            <p>Anda berada dalam kategori overweight atau berat badan berlebih.<br />
+                                Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalori makanan
+                                yang<br />
+                                dikonsumsi dan berolahraga.<br />
+                                Jika BMI Anda berada dalam kategori ini maka Anda dianjurkan menurunkan berat
+                                badan<br />
+                                hingga batas normal.</p>
                 </section>
-                <button>Konsultasi Ahli Givi Via Aplikasi</button><button>Registrasi Online Ahli Gizi</button>
+                <button>Konsultasi Ahli Givi Via Aplikasi</button>
+                <button>Registrasi Online Ahli Gizi</button>
                 <p style="text-align: left;">BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesihatan tubuh dan
                     resiko penyakit<br />
                     seseorang. Anda konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan<br />
@@ -86,7 +85,8 @@
                 <div class="penyakit">
                     <h4>Beberapa penyakit yang berasal dari kegemukan</h4>
                     <p>Diabetes<br />Hipertensi<br />Sakit Jantung<br />Osteoarthritis</p>
-                    <button>Konsultasi Ahli Givi Via Aplikasi</button><button>Registrasi Online Ahli Gizi</button>
+                    <button>Konsultasi Ahli Givi Via Aplikasi</button>
+                    <button>Registrasi Online Ahli Gizi</button>
                 </div>
 
             </div>
